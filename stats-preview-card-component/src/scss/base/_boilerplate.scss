@@ -1,4 +1,21 @@
+@use '../utils' as *;
+:root {
+  @each $property, $value in $project-fonts {
+    --#{$property}: #{$value};
+  }
+  @each $property, $value in $project-colors {
+    --#{$property}: #{$value};
+  }
+  @each $property, $value in $project-spacing {
+    --#{$property}: #{$value};
+  }
+  @each $property, $value in $project-others {
+    --#{$property}: #{$value};
+  }
+}
+
 body {
-  background: #333;
-  color: orangered;
+  @include var(background, bg-color);
+  @include var(color, font-color);
+  @include var(font-family, ff);
 }
