@@ -1,0 +1,49 @@
+html {
+  font-size: 100%;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  font-size: inherit;
+  box-sizing: border-box;
+}
+
+/* Set base body defaults */
+body {
+  padding: 0;
+  min-height: 100vh;
+  line-height: 1.6; /* can be between 1.5 and 1.7 */
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}

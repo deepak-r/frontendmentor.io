@@ -1,0 +1,4 @@
+@mixin var($property, $variable) {
+  #{property}: map-get(#{$variable}); // optional: CSS variable fallback
+  #{$property}: var(--#{$variable}); // Include CSS custom property
+}
