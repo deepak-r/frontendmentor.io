@@ -1,0 +1,22 @@
+$brand-vars: (
+  // colors
+  'ebony': hsl(233, 47%, 7%),
+  'port-gore': hsl(244, 38%, 16%),
+  'medium-purple': hsl(277, 64%, 61%),
+  'white-200': hsla(0, 0%, 100%, 0.6),
+  'white-400': hsla(0, 0%, 100%, 0.75),
+  'white-700': hsl(0, 0%, 100%),
+  // font family
+  'ff-primary': ('"Inter"', sans-serif),
+  'ff-secondary': ('"Lexend Deca"', sans-serif),
+  // font weight
+  'fw-normal': 400,
+  'fw-bold': 700,
+  // font size
+  'fs-base': 0.9rem,
+  // line height
+  'lh-normal': 1.6,
+  // breakpoints
+  'screen-sm': 375px,
+  'screen-lg': 1440px
+);

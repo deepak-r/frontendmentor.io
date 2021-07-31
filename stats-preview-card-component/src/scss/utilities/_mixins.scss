@@ -1,4 +1,7 @@
-@mixin var($property, $variable) {
-  #{property}: map-get(#{$variable}); // optional: CSS variable fallback
-  #{$property}: var(--#{$variable}); // Include CSS custom property
+// Set CSS properties to CSS custom properties with fallback
+@mixin add-property($property, $variable) {
+  // optional: CSS variable fallback
+  #{property}: map-get($brand-vars, #{$variable});
+  // Include CSS custom property
+  #{$property}: var(--#{$variable});
 }

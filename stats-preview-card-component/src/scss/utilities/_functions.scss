@@ -1,0 +1,9 @@
+// Merge multiple maps and return a map of all variables
+// @function map-collect($maps...) {
+//   $collection: ();
+
+//   @each $map in $maps {
+//     $collection: map-merge($collection, $map);
+//   }
+//   @return $collection;
+// }

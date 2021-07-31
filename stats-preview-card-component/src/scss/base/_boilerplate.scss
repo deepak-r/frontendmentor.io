@@ -1,21 +1,6 @@
-@use '../utils' as *;
+@use '../utilities' as *;
 :root {
-  @each $property, $value in $project-fonts {
+  @each $property, $value in $brand-vars {
     --#{$property}: #{$value};
   }
-  @each $property, $value in $project-colors {
-    --#{$property}: #{$value};
-  }
-  @each $property, $value in $project-spacing {
-    --#{$property}: #{$value};
-  }
-  @each $property, $value in $project-others {
-    --#{$property}: #{$value};
-  }
-}
-
-body {
-  @include var(background, bg-color);
-  @include var(color, font-color);
-  @include var(font-family, ff);
 }
