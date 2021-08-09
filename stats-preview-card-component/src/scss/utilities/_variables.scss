@@ -1,11 +1,21 @@
+$brand-color: (
+  // Names from name-that-color
+  'blackcurrant': hsl(233, 50%, 7%),
+  'violent-violet': hsl(244, 38%, 16%),
+  'medium-orchid': hsl(277, 64%, 61%),
+  'white-700': hsl(0, 0%, 100%),
+  'white-400': hsla(0, 0%, 100%, 0.75),
+  'white-200': hsla(0, 0%, 100%, 0.6)
+);
+
 $brand-vars: (
   // colors
-  'ebony': hsl(233, 47%, 7%),
-  'port-gore': hsl(244, 38%, 16%),
-  'medium-purple': hsl(277, 64%, 61%),
-  'white-200': hsla(0, 0%, 100%, 0.6),
-  'white-400': hsla(0, 0%, 100%, 0.75),
-  'white-700': hsl(0, 0%, 100%),
+  'clr-primary-background': map-get($brand-color, 'blackcurrant'),
+  'clr-card-background': map-get($brand-color, 'violent-violet'),
+  'clr-accent': map-get($brand-color, 'medium-orchid'),
+  'clr-heading-main': map-get($brand-color, 'white-700'),
+  'clr-heading-stat': map-get($brand-color, 'white-200'),
+  'clr-body': map-get($brand-color, 'white-400'),
   // font family
   'ff-primary': ('"Inter"', sans-serif),
   'ff-secondary': ('"Lexend Deca"', sans-serif),
@@ -15,7 +25,7 @@ $brand-vars: (
   // font size
   'fs-base': 0.9rem,
   // line height
-  'lh-normal': 1.6,
+  'lh': 1.6,
   // breakpoints
   'screen-sm': 375px,
   'screen-lg': 1440px
