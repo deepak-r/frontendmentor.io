@@ -6,4 +6,6 @@
 .DS_Store
 .prettierignore
 # Avoid node_module files
-node_modules
+node_modules/
+
+style.min.css
