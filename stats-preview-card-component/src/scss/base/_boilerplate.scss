@@ -1,6 +1,17 @@
 @use '../utilities' as *;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
 :root {
   @each $property, $value in $brand-vars {
     --#{$property}: #{$value};
   }
+}
+
+body {
+  background-color: var(--clr-primary-background);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }

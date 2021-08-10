@@ -14,8 +14,8 @@ $brand-vars: (
   'clr-card-background': map-get($brand-color, 'violent-violet'),
   'clr-accent': map-get($brand-color, 'medium-orchid'),
   'clr-heading-main': map-get($brand-color, 'white-700'),
-  'clr-heading-stat': map-get($brand-color, 'white-200'),
-  'clr-body': map-get($brand-color, 'white-400'),
+  'clr-heading-stat': map-get($brand-color, 'white-400'),
+  'clr-body': map-get($brand-color, 'white-200'),
   // font family
   'ff-primary': ('"Inter"', sans-serif),
   'ff-secondary': ('"Lexend Deca"', sans-serif),
@@ -24,6 +24,8 @@ $brand-vars: (
   'fw-bold': 700,
   // font size
   'fs-base': 0.9rem,
+  'fs-lg': 1.25rem,
+  'fs-xl': 1.5rem,
   // line height
   'lh': 1.6,
   // breakpoints
