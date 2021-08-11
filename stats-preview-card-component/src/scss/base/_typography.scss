@@ -18,6 +18,8 @@ body {
 .card__stats {
   text-transform: uppercase;
   font-family: var(--ff-secondary);
+  font-size: var(--fs-sm);
+  letter-spacing: 0.8px;
 }
 .card__stat {
   font-weight: var(--fw-bold);

@@ -9,9 +9,16 @@
 
 body {
   background-color: var(--clr-primary-background);
+  position: relative;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 5px;
 }

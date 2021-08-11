@@ -1,14 +1,17 @@
 .card {
   width: 85%;
+  min-width: 325px;
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 968px;
   background-color: var(--clr-card-background);
   border-radius: 5px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 
   &__img {
     width: 100%;
-    max-width: var(--screen-sm);
+    max-width: 568px;
     object-fit: cover;
   }
 
@@ -30,5 +33,26 @@
 
   &__stat {
     margin-top: 1em;
+  }
+
+  @media (min-width: 612px) {
+    & {
+      flex-direction: row;
+      text-align: left;
+    }
+    &__content {
+      padding: 3em;
+      padding-right: 5em;
+      order: -1;
+    }
+    &__body {
+      margin-top: 1.25em;
+    }
+
+    &__stats {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 5em;
+    }
   }
 }
